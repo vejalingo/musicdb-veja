@@ -1,9 +1,12 @@
 import React from "react";
+import { Navigation } from "./shared/components";
 
 function App() {
   return (
-    <div className="App">
-      <p>Xse</p>
+    <div className="app">
+      <header>
+        <Navigation />
+      </header>
     </div>
   );
 }
