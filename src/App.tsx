@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation } from "./shared/components";
+import { Navigation, Charts } from "./shared/components";
 
 function App() {
   return (
@@ -7,6 +7,9 @@ function App() {
       <header>
         <Navigation />
       </header>
+      <main>
+        <Charts />
+      </main>
     </div>
   );
 }

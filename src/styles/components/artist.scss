@@ -1,0 +1,19 @@
+.artists {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 20px;
+  margin-right: -20px;
+  .artist {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__cover {
+      width: 400px;
+      display: block;
+      height: auto;
+    }
+    &__title {
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

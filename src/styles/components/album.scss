@@ -1,0 +1,33 @@
+.albums {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 20px;
+  margin-right: -20px;
+  .album {
+    padding: 5px 10px 20px;
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition: transform 500ms;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+      z-index: 1;
+    }
+
+    &__cover {
+      width: 230px;
+      display: block;
+      height: auto;
+      border-radius: 4px;
+    }
+    &__title {
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

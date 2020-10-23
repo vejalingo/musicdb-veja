@@ -1,2 +1,8 @@
 @import "./styles/elements/base.scss";
 @import "./styles/components/navigation.scss";
+@import "./styles/components/album.scss";
+@import "./styles/components/artist.scss";
+
+.charts {
+  padding: 20px;
+}
