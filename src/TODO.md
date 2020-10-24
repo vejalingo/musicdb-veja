@@ -10,3 +10,4 @@
 - Add tests
 - Sort out styles folder
 - Update ReadMe
+- Host on heroku
