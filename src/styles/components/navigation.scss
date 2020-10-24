@@ -1,4 +1,8 @@
 .navigation {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
   &__image {
     width: 50px;
     height: auto;

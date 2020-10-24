@@ -1,5 +1,5 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import { _fetchCharts } from "./api";
+import { _fetchCharts, _performSearch } from "./api";
 import types from "../types";
 
 function* fetchCharts() {
@@ -15,8 +15,24 @@ function* fetchCharts() {
   }
 }
 
+function* performSearch({ payload }: any) {
+  console.log("SAGA action", payload);
+
+  try {
+    yield put({ type: "search/list/FETCHING" });
+
+    const searchResult = yield call(_performSearch, payload);
+    const resolvedData = yield searchResult.json();
+
+    yield put({ type: "search/list/FETCHED_ITEMS", payload: resolvedData });
+  } catch (e) {
+    yield put({ type: "search/list/FETCH_ERROR", message: e });
+  }
+}
+
 function* chartSaga() {
   yield takeEvery(types.FETCH_CHARTS, fetchCharts);
+  yield takeEvery(types.SEARCH_ARTIST, performSearch);
 }
 
 export default chartSaga;
