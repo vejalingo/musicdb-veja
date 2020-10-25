@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import SearchContext from "../../context";
-import { Artist } from "../";
+import { Artist, Loader } from "../";
 
 const ArtistSearch = ({ data }: any) => {
   return (
@@ -21,7 +21,7 @@ const Search = () => {
   const { searchInput } = useContext(SearchContext);
 
   const fetchData = useCallback(async () => {
-    dispatch({ type: "SEARCH_ARTIST", payload: `${searchInput}` });
+    dispatch({ type: "SEARCH_ARTIST", payload: searchInput });
   }, [searchInput]);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Search = () => {
   return (
     <div className="search">
       {fetching ? (
-        <div>loading...</div>
+        <Loader />
       ) : listItems?.data ? (
         <>
           {listItems?.data?.length ? (

@@ -4,3 +4,4 @@ export { default as TrendingArtists } from "./artists";
 export { default as Album } from "./album";
 export { default as Artist } from "./artist";
 export { default as Search } from "./search";
+export { default as Loader } from "./loader";

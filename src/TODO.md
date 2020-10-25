@@ -4,7 +4,7 @@
 - Search Result Page Styling
 - Relative paths
 - Move types to global
-- Loader component
+- ~~Loader component~~
 - DRY
 - Fix console Error / Warnings
 - Add tests

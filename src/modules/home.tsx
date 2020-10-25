@@ -1,10 +1,13 @@
 import React, { useEffect, useContext } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { TrendingAlbums, TrendingArtists, Search } from "../shared/components";
+import {
+  TrendingAlbums,
+  TrendingArtists,
+  Search,
+  Loader,
+} from "../shared/components";
 import types from "../store/types";
 import SearchContext from "../shared/context";
-
-const Loading = () => <div>Loading...</div>;
 
 const Charts = () => {
   const dispatch = useDispatch();
@@ -27,7 +30,7 @@ const Charts = () => {
       ) : (
         <div className="charts">
           {fetching ? (
-            <Loading />
+            <Loader />
           ) : (
             <>
               <TrendingAlbums data={albums?.data} />
