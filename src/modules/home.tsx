@@ -5,9 +5,9 @@ import {
   TrendingArtists,
   Search,
   Loader,
-} from "../shared/components";
-import types from "../store/types";
-import SearchContext from "../shared/context";
+} from "shared/components";
+import types from "store/types";
+import SearchContext from "shared/context";
 
 const Charts = () => {
   const dispatch = useDispatch();

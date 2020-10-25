@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import SearchContext from "../../context";
+import SearchContext from "shared/context";
 import { Artist, Loader } from "../";
 
 const ArtistSearch = ({ data }: any) => {

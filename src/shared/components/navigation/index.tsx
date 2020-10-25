@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
 import { Input } from "antd";
-import SearchContext from "../../context";
+import SearchContext from "shared/context";
 
 const { Search } = Input;
 

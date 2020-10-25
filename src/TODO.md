@@ -9,5 +9,5 @@
 - Fix console Error / Warnings
 - Add tests
 - Sort out styles folder
-- Update ReadMe
+- ~~Update ReadMe~~
 - Host on heroku

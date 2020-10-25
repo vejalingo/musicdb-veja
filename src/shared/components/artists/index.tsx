@@ -18,7 +18,7 @@ const TrendingArtists = ({ data }: TrendingArtistsI) => {
       <h2>Trending Artists</h2>
       <div className="artists">
         {data?.map(({ picture_big, name, id }: TrendingArtistI) => (
-          <Link key={id} to={`/album/${id}`}>
+          <Link key={id} to={`/artist/${id}`}>
             <Artist title={name} image={picture_big} />
           </Link>
         ))}
