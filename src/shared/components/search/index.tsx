@@ -45,7 +45,7 @@ const Search = () => {
           )}
         </>
       ) : (
-        <div className="loading">loading</div>
+        <Loader />
       )}
     </div>
   );
