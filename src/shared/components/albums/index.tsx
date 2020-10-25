@@ -4,22 +4,27 @@ import { Album } from "../";
 
 interface TrendingAlbumsI {
   data: [TrendingAlbumI];
+  heading?: string;
 }
 
 interface TrendingAlbumI {
   cover_big: string;
   title: string;
   id: string;
+  release_date?: string;
 }
 
-const TrendingAlbums = ({ data }: TrendingAlbumsI) => {
+const TrendingAlbums = ({
+  data,
+  heading = "Trending Albums",
+}: TrendingAlbumsI) => {
   return (
     <>
-      <h2>Trending Albums</h2>
+      <h2>{heading}</h2>
       <div className="albums">
-        {data?.map(({ cover_big, title, id }: TrendingAlbumI) => (
+        {data?.map(({ cover_big, title, id, release_date }: TrendingAlbumI) => (
           <Link key={id} to={`/album/${id}`}>
-            <Album title={title} image={cover_big} />
+            <Album title={title} image={cover_big} year={release_date} />
           </Link>
         ))}
       </div>

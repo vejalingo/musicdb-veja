@@ -1,8 +1,8 @@
 ## TODO
 
-- Clicking artist must allow users to see basic info about them
+- ~~Clicking artist must allow users to see basic info about them~~
 - Search Result Page Styling
-- Relative paths
+- ~~Relative paths~~
 - Move types to global
 - ~~Loader component~~
 - DRY
@@ -11,3 +11,4 @@
 - Sort out styles folder
 - ~~Update ReadMe~~
 - Host on heroku
+- Responsiveness
