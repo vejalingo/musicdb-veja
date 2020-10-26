@@ -30,7 +30,7 @@ const Artist = ({ match: { params } }: any): ReactElement => {
 
   return (
     <div className="profile">
-      <Card style={{ width: 300 }} loading={!itemLoaded}>
+      <Card className="profile__info" loading={!itemLoaded}>
         <Meta
           avatar={<Avatar src={item?.picture_small} />}
           title={item?.name}
@@ -48,7 +48,7 @@ const Artist = ({ match: { params } }: any): ReactElement => {
         />
       </Card>
 
-      <Card style={{ width: 600, marginLeft: 16 }} loading={!itemLoaded}>
+      <Card className="profile__topTracks" loading={!itemLoaded}>
         <TrendingAlbums heading="Albums" data={albumData?.data} />
       </Card>
     </div>

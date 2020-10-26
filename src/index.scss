@@ -1,23 +1,11 @@
+@import "./styles/settings/global.scss";
+
 @import "~antd/dist/antd.dark.css";
+
 @import "./styles/elements/base.scss";
+
+@import "./styles/objects/layout.scss";
+
 @import "./styles/components/navigation.scss";
 @import "./styles/components/album.scss";
 @import "./styles/components/artist.scss";
-
-.charts {
-  padding: 20px;
-}
-
-.loader {
-  width: 100%;
-  height: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-}

@@ -17,3 +17,28 @@
     }
   }
 }
+
+.profile {
+  display: block;
+  justify-content: center;
+  color: #fff;
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+
+  &__info {
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: 300px;
+    }
+  }
+
+  &__topTracks {
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: 600px;
+      margin-left: 16px;
+    }
+  }
+}
